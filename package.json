@@ -1,0 +1,24 @@
+{
+  "name": "lead-agent",
+  "version": "1.0.0",
+  "description": "Lead generation agent: Google Places → Firecrawl → PageSpeed → LLM → Google Sheet",
+  "main": "dist/index.js",
+  "scripts": {
+    "agent": "ts-node src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  },
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+out/
+*.js.map
+
+# credenziali: non committare mai
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+.env.*
+!.env.example
